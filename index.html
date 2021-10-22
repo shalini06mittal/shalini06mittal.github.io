@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javscript DOM Demo</h1>
+    <div id='d1'> </div>
+    <div><button onclick='dynamic()'>Click me</button></div>
+    <div><button onclick='remove()'>Remove</button></div>
+    <p>para</p>
+    <script src="script.js"></script>
+    <script>
+        
+
+        var id = 0;
+        var ele = document.getElementById('d1')
+        var colors = ['red', 'green', 'yellow', 'blue'];
+        function dynamic() {
+
+            var h1ele = document.createElement('h1');
+            h1ele.innerText = id + ' appeneded in div'
+            h1ele.setAttribute('id', id++);
+            h1ele.addEventListener('mouseenter', function () {
+                //alert(this.getAttribute('id'))
+                // ele.removeChild(this);
+                this.style.color = colors[id - 1];
+            });
+            h1ele.addEventListener('mouseleave', function () {
+                //alert(this.getAttribute('id'))
+                // ele.removeChild(this);
+                this.style.color = 'black';
+            });
+            ele.appendChild(h1ele)
+        }
+        function remove() {
+            var h1 = document.getElementsByTagName('h1');
+            for (var c of h1) {
+                if (parseInt(c.getAttribute('id')) == 1)
+                    ele.removeChild(c)
+            }
+
+        }
+    </script>
+</body>
+
+</html>

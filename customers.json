@@ -1,0 +1,52 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "username": "shalini",
+      "city": "Mumbai",
+      "email": "shalini@codingthesmartway.com"
+    },
+    {
+      "id": 2,
+      "username": "Steve",
+      "city": "Palmer",
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": 3,
+      "username": "Ann",
+      "city": "Smith",
+      "email": "ann@codingthesmartway.com"
+    },
+    {
+      "username": "Payal",
+      "city": "Hyd",
+      "email": "payal@gmail.com",
+      "id": 4
+    },
+    {
+      "username": "sia",
+      "email": "sia@gl.com",
+      "city": "satara",
+      "id": 5
+    },
+    {
+      "username": "vishal",
+      "email": "vishal@gl.com",
+      "city": "Vishakapatnam",
+      "id": 6
+    },
+    {
+      "username": "n1",
+      "email": "n1@g.com",
+      "city": "c1",
+      "id": 6
+    },
+    {
+      "username": "Rashmi",
+      "email": "rashmi@hcl.com",
+      "city": "Rohtak",
+      "id": 7
+    }
+  ]
+}

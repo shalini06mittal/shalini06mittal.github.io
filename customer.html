@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #details div, #details1 div{
+            padding:10px;
+            background-color:antiquewhite;
+            color: brown;
+            width:70%;
+            margin:10px auto;
+            
+        }
+    </style>
+</head>
+<body onload='getCustomers()'>
+    <h4><a href='addcustomer.html'>Add Customer</a></h4>
+    <h1>Customer Details:</h1>
+    <div id='details'>
+
+    </div>
+    <div>
+        <input type='text' id='cid' placeholder="enter Id">
+    </div>
+    <div>
+        <input type='button' value='Get Customer By Id' onclick='getCustomerById()'>
+    </div>
+    <div>
+        <input type='text' id='city' placeholder="Enter çity">
+    </div>
+    <div>
+        <input type='button' value='Get Customer By City' onclick='getCustomerByCity()'>
+    </div>
+    <div id='details1'>
+
+    </div>
+    <script src='restapi.js'></script>
+</body>
+</html>
